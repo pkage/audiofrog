@@ -1,0 +1,44 @@
+body {
+	margin: 0;
+	
+	height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	font-family: sans-serif;
+
+	overflow: hidden;
+}
+
+.frog {
+	position: relative;
+	background-image: url(frogbg.png);
+	width: 750px;
+	height: 450px;
+}
+
+.frogfg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 750px;
+	height: 450px;
+	transform: none;
+	transition: transform 0.1s cubic-bezier(0,0,0.3,1);
+	z-index: 2;
+	pointer-events: none;
+}
+
+.frog > a {
+	z-index: 1;
+	font-size: 18px;
+	color: white;
+	cursor: pointer;
+	position: absolute;
+	top: 170px;
+	left: 250px;
+
+}
